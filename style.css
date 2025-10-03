@@ -1,0 +1,602 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  overflow: hidden;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  min-width: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+section header {
+  width: 250px;
+  height: 100vh;
+  overflow-y: scroll;
+  padding: 50px 0 0 50px;
+  background-color: white;
+}
+section header .header_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+section header .header_block h1 {
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+}
+section header .header_block p {
+  width: 100%;
+  color: #757575;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+section header .header_block p:hover {
+  color: black;
+  background-color: rgba(117, 117, 117, 0.4588235294);
+}
+section header .header_block a {
+  width: 100%;
+  padding: 8px 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: black;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+section header .header_block a:hover {
+  color: black;
+  background-color: rgba(117, 117, 117, 0.4588235294);
+}
+section header .header_block > .btn {
+  width: 100%;
+  padding: 8px 0;
+  border-radius: 0;
+  text-align: left;
+}
+section header .header_block > .btn:hover {
+  color: black;
+  background-color: rgba(117, 117, 117, 0.4588235294);
+}
+section header .header_block .modal-dialog {
+  max-width: 900px !important;
+}
+section header .header_block .modal-dialog .modal-content {
+  width: 100%;
+  padding: 50px !important;
+}
+section header .header_block .modal-dialog .modal-content .modal-header {
+  border: none;
+}
+section header .header_block .modal-dialog .modal-content .modal-header h1 {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: center;
+}
+section header .header_block .modal-dialog .modal-content span {
+  text-align: center;
+}
+section header .header_block .modal-dialog .modal-content .modal-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+section header .header_block .modal-dialog .modal-content .modal-body input {
+  width: 100%;
+  height: 45px;
+  border: groove 1px;
+}
+section header .header_block .modal-dialog .modal-content .modal-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+}
+section header > :nth-child(2) {
+  height: 550px;
+}
+section header > :nth-child(2) .dropdown {
+  width: 100%;
+  margin-bottom: 16px;
+}
+section header > :nth-child(2) .dropdown .btn {
+  padding: 0;
+  width: 100%;
+  border-radius: 0;
+  text-align: left;
+  color: #757575;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+section header > :nth-child(2) .dropdown .btn:hover {
+  color: black;
+  background-color: rgba(117, 117, 117, 0.4588235294);
+}
+section header .burger {
+  display: none;
+}
+section main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 100vh;
+  overflow-y: scroll;
+  padding-right: 50px;
+  padding-top: 23px;
+  padding-left: 20px;
+}
+section main .jeans {
+  width: 100%;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+section main .jeans .icons {
+  width: 100px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+section main .jeans .icons img {
+  width: 30px;
+  height: 50%;
+}
+section main .new {
+  width: 100%;
+  height: 100vh;
+  background: url(https://www.w3schools.com/w3images/jeans.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+section main .new .text {
+  width: 489px;
+  height: 299px;
+  padding: 24px 48px;
+}
+section main .new .text h2 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 64px;
+  font-weight: 300;
+  margin: 10px 0;
+}
+section main .new .text p {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  margin: 10px 0;
+}
+section main .new .text a {
+  padding: 12px 24px;
+  font-size: 15px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+section main .new .text a:hover {
+  background: #cfcece;
+  color: black;
+}
+@media screen and (max-width: 995px) {
+  section main .new {
+    height: 50vh;
+  }
+  section main .new .text h2, section main .new .text p {
+    font-size: 25px;
+  }
+}
+section main p {
+  margin: 15px 0;
+  font-size: 15px;
+}
+section main .items {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+}
+section main .items .box {
+  width: 20%;
+  max-width: 281.44px;
+  height: 300.88px;
+  padding: 0.15px 16px;
+  position: relative;
+  margin-bottom: 20px;
+}
+section main .items .box .text {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+section main .items .nkar1 {
+  background: url(https://www.w3schools.com/w3images/jeans1.jpg);
+  background-size: 100% 80%;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+section main .items .nkar2,
+section main .items .nkar7 {
+  background: url(https://www.w3schools.com/w3images/jeans2.jpg);
+  background-size: 100% 80%;
+  background-repeat: no-repeat;
+  background-position: top;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+section main .items .nkar2 p,
+section main .items .nkar7 p {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 5px 10px;
+  background: black;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+section main .items .nkar2 button,
+section main .items .nkar7 button {
+  padding: 8px 16px;
+  border: none;
+  opacity: 0;
+}
+section main .items .nkar2 button img,
+section main .items .nkar7 button img {
+  width: 20px;
+}
+section main .items .nkar2:hover button,
+section main .items .nkar7:hover button {
+  background: rgba(0, 0, 0, 0.597);
+  color: white;
+  opacity: 1;
+}
+section main .items .nkar2:hover button:hover,
+section main .items .nkar7:hover button:hover {
+  background: grey;
+  color: black;
+}
+section main .items .nkar3 {
+  background: url(https://www.w3schools.com/w3images/jeans3.jpg);
+  background-size: 100% 80%;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+section main .items .nkar4 {
+  background: url(https://www.w3schools.com/w3images/jeans4.jpg);
+  background-size: 100% 80%;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+section main .items .nkar5 {
+  background: url(https://www.w3schools.com/w3images/jeans2.jpg);
+  background-size: 100% 80%;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+section main .items .nkar6 {
+  background: url(https://www.w3schools.com/w3images/jeans3.jpg);
+  background-size: 100% 80%;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+section main .items .nkar7 {
+  background: url(https://www.w3schools.com/w3images/jeans4.jpg);
+  background-size: 100% 80%;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+section main .items .nkar7 b {
+  color: red;
+}
+section main .items .nkar8 {
+  background: url(https://www.w3schools.com/w3images/jeans1.jpg);
+  background-size: 100% 80%;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+@media screen and (max-width: 995px) {
+  section main .items {
+    gap: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section main .items .box {
+    width: 50%;
+    max-width: 355px;
+    height: 550px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+}
+@media screen and (max-width: 765px) {
+  section main .items .box {
+    max-width: 100%;
+  }
+}
+section main .subs {
+  width: 100%;
+  height: auto;
+  border: solid;
+  background-color: black;
+  color: white;
+  padding: 40px 10px;
+  font-family: "Montserrat", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 10px;
+}
+section main .subs h2 {
+  font-size: 36px;
+  letter-spacing: 3px;
+  font-weight: 200;
+  margin: 10px 0;
+}
+section main .subs p {
+  font-size: 15px;
+  margin: 15px 0;
+}
+section main .subs input {
+  width: 100%;
+  padding: 5px 0;
+}
+section main .subs button {
+  padding: 12px 24px;
+  background-color: #F44336;
+  color: white;
+  border: none;
+  font-size: 15px;
+}
+section main .subs button:hover {
+  background: #cfcece;
+  color: black;
+}
+section main .contact {
+  width: 100%;
+  height: auto;
+  padding: 64px 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(241, 241, 241) !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+section main .contact .child {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: auto;
+}
+section main .contact .child h4, section main .contact .child b {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+}
+section main .contact .child ul {
+  padding: 0;
+  margin: 0;
+}
+section main .contact .child ul li {
+  width: 100%;
+  list-style: none;
+  margin: 10px 0;
+  text-align: center;
+  text-transform: capitalize;
+}
+section main .contact .child ul li a {
+  color: black;
+}
+section main .contact .child ul p {
+  font-size: 32px;
+}
+@media screen and (max-width: 995px) {
+  section main .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section main .contact .child {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+section main footer {
+  width: 100%;
+  height: 70px;
+  background-color: black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Montserrat", sans-serif;
+}
+section main footer p {
+  font-size: 15px;
+}
+section main footer p a {
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+section main footer p a:hover {
+  -webkit-text-decoration: underline solid;
+          text-decoration: underline solid;
+}
+@media screen and (max-width: 995px) {
+  section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section header {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    overflow-y: hidden;
+  }
+  section header .header_block, section header .burger {
+    width: -webkit-max-content !important;
+    width: -moz-max-content !important;
+    width: max-content !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  section header .header_block h1, section header .burger h1 {
+    margin: 0;
+  }
+  section header .list {
+    display: none;
+  }
+  section header .burger {
+    display: block;
+    margin: 0;
+    font-size: 24px;
+  }
+  section main {
+    width: 100%;
+    padding: 10px;
+  }
+}
