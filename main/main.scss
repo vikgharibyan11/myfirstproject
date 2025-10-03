@@ -1,0 +1,320 @@
+main {
+    flex-grow: 1;
+    height: 100vh;
+    overflow-y: scroll;
+    padding-right: 50px;
+    padding-top: 23px;
+    padding-left: 20px;
+
+    .jeans {
+        width: 100%;
+        height: 70px;
+        @include flex();
+        justify-content: space-between;
+
+        .icons {
+            width: 100px;
+            height: 100%;
+            @include flex();
+            gap: 10px;
+
+            img {
+                width: 30px;
+                height: 50%
+            }
+        }
+    }
+
+    .new {
+        width: 100%;
+        height: 100vh;
+        background: url(https://www.w3schools.com/w3images/jeans.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+
+        .text {
+            width: 489px;
+            height: 299px;
+            padding: 24px 48px;
+
+
+            h2 {
+                color: white;
+                font-family: "Montserrat", sans-serif;
+                font-size: 64px;
+                font-weight: 300;
+                margin: 10px 0;
+            }
+
+            p {
+                color: white;
+                font-family: "Montserrat", sans-serif;
+                font-size: 36px;
+                font-weight: 300;
+                margin: 10px 0;
+            }
+
+            a {
+                padding: 12px 24px;
+                font-size: 15px;
+                background: black;
+                color: white;
+                text-decoration: none;
+                text-transform: uppercase;
+
+                &:hover {
+                    background: #cfcece;
+                    color: black;
+                }
+            }
+        }
+        @media screen and (max-width:995px){
+            height: 50vh;
+            .text{
+                h2,p{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
+    p {
+        margin: 15px 0;
+        font-size: 15px;
+    }
+
+    .items {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+
+
+        .box {
+            width: calc(100% / 5);
+            max-width: 281.44px;
+            height: 300.88px;
+            padding: .15px 16px;
+            position: relative;
+            margin-bottom: 20px;
+
+            .text {
+    
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+        }
+
+        .nkar1 {
+            background: url(https://www.w3schools.com/w3images/jeans1.jpg);
+            background-size: 100% 80%;
+            background-repeat: no-repeat;
+            background-position: top;
+
+        }
+
+        .nkar2,
+        .nkar7 {
+            background: url(https://www.w3schools.com/w3images/jeans2.jpg);
+            background-size: 100% 80%;
+            background-repeat: no-repeat;
+            background-position: top;
+            @include flex();
+            position: relative;
+
+            p {
+                width: max-content;
+
+                padding: 5px 10px;
+                background: black;
+                color: white;
+                position: absolute;
+                top: 0;
+                left: 0;
+                margin: 0;
+            }
+
+            button {
+                padding: 8px 16px;
+                border: none;
+                opacity: 0;
+
+                img {
+                    width: 20px;
+                }
+
+
+            }
+
+            &:hover {
+
+                button {
+                    background: rgba(0, 0, 0, 0.597);
+                    color: white;
+                    opacity: 1;
+
+                    &:hover {
+                        background: grey;
+                        color: black;
+                    }
+                }
+
+            }
+        }
+
+        .nkar3 {
+            background: url(https://www.w3schools.com/w3images/jeans3.jpg);
+            background-size: 100% 80%;
+            background-repeat: no-repeat;
+            background-position: top;
+        }
+
+.nkar4 {
+            background: url(https://www.w3schools.com/w3images/jeans4.jpg);
+            background-size: 100% 80%;
+            background-repeat: no-repeat;
+            background-position: top;
+        }
+
+        .nkar5 {
+            background: url(https://www.w3schools.com/w3images/jeans2.jpg);
+            background-size: 100% 80%;
+            background-repeat: no-repeat;
+            background-position: top;
+
+        }
+
+        .nkar6 {
+            background: url(https://www.w3schools.com/w3images/jeans3.jpg);
+            background-size: 100% 80%;
+            background-repeat: no-repeat;
+            background-position: top;
+        }
+
+        .nkar7 {
+            background: url(https://www.w3schools.com/w3images/jeans4.jpg);
+            background-size: 100% 80%;
+            background-repeat: no-repeat;
+            background-position: top;
+            b{
+                color: red;
+            }
+        }
+
+        .nkar8 {
+            background: url(https://www.w3schools.com/w3images/jeans1.jpg);
+            background-size: 100% 80%;
+            background-repeat: no-repeat;
+            background-position: top;
+        }
+        @media screen and (max-width:995px) {
+
+            gap: 20px;
+            justify-content: center;
+
+
+            .box {
+                width: calc(100% / 2);
+                max-width: 355px;
+                height: 550px;
+                flex-grow: 1;
+            }
+
+        }
+        @media screen and (max-width:765px){
+            .box{
+                max-width: 100%;
+            }
+        }
+
+    }
+    .subs{
+        width: 100%;
+        height: auto;
+        border: solid;
+        background-color: black;
+        color: white;
+        padding: 40px 10px;
+        font-family: "Montserrat", sans-serif;
+        @include flex();
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        h2{
+            font-size: 36px;
+            letter-spacing: 3px;
+            font-weight: 200;
+            margin: 10px 0;
+        }
+        p{
+            font-size: 15px;
+            margin: 15px 0;
+        }
+        input{
+            width: 100%;
+            padding: 5px 0;
+        }
+        button{
+            padding: 12px 24px;
+            background-color: #F44336;
+            color: white;
+            border: none;
+            font-size: 15px;
+            &:hover{
+                background: #cfcece;
+                color: black;
+            }
+        }
+    }
+    .contact{
+        width: 100%;
+        height: auto;
+        padding: 64px 0;
+        font-family: "Montserrat", sans-serif;
+        background-color: rgb(241, 241, 241) !important;
+        @include flex();
+        align-items: flex-start;
+        .child{
+            flex-grow: 1;
+            height: auto;
+            h4, b{
+                font-size: 20px;
+                text-align: center;
+                font-weight: 400;
+            }
+            ul{
+                padding: 0;
+                margin: 0;
+                li{
+                    width: 100%;
+                    list-style: none;
+                    margin: 10px 0;
+                    text-align: center;
+                    text-transform: capitalize;
+                    a{
+                        color: black;
+                    }
+                }
+                p{
+                    font-size: 32px;
+                }
+            }
+        }
+        @media screen and (max-width:995px){
+            flex-direction: column;
+            .child{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    @import './../footer/footer.scss';
+}
